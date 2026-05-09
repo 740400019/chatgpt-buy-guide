@@ -1,0 +1,349 @@
+/* ChatGPT 购买指南 — main.css */
+:root {
+  --accent: #ff6b35;
+  --accent-dark: #e0541f;
+  --accent-soft: #fff4ee;
+  --text: #1a1a1a;
+  --text-mute: #555;
+  --text-light: #888;
+  --line: #e8e8e8;
+  --bg: #ffffff;
+  --bg-soft: #fafafa;
+  --maxw: 800px;
+  --maxw-wide: 1100px;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+  background: var(--bg);
+  word-wrap: break-word;
+}
+
+img { max-width: 100%; height: auto; }
+a { color: var(--accent-dark); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.wrap {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+.site-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+.site-title:hover { text-decoration: none; color: var(--accent); }
+.site-nav { display: flex; align-items: center; gap: 16px; font-size: 14px; }
+.site-nav a { color: var(--text-mute); }
+.site-nav a:hover { color: var(--accent); text-decoration: none; }
+.site-nav .cta {
+  background: var(--accent);
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+.site-nav .cta:hover { background: var(--accent-dark); color: #fff; }
+
+/* Main */
+.site-main {
+  padding: 32px 0 64px;
+  min-height: 60vh;
+}
+
+/* Hero (home) */
+.hero {
+  text-align: center;
+  padding: 40px 0 20px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+.hero h1 {
+  font-size: 36px;
+  margin: 0 0 12px;
+  letter-spacing: -0.5px;
+}
+.hero-sub {
+  color: var(--text-mute);
+  font-size: 17px;
+  max-width: 640px;
+  margin: 0 auto 12px;
+}
+.hero-meta {
+  color: var(--text-light);
+  font-size: 14px;
+  margin: 0;
+}
+
+.home-content { max-width: var(--maxw); margin: 0 auto 40px; }
+
+/* Post list */
+.post-list-section { max-width: var(--maxw-wide); margin: 0 auto; }
+.post-list-section h2,
+.home-products h2 {
+  font-size: 22px;
+  margin: 40px 0 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 16px;
+}
+.post-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color .15s, transform .15s;
+}
+.post-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.post-card a {
+  display: block;
+  padding: 18px 20px;
+  color: var(--text);
+}
+.post-card a:hover { text-decoration: none; }
+.post-card h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+  line-height: 1.45;
+  color: var(--text);
+}
+.post-card-desc {
+  color: var(--text-mute);
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+.post-card-meta {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+/* Post page */
+.post {
+  max-width: var(--maxw);
+  margin: 0 auto;
+}
+.post-header {
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.post-title {
+  font-size: 30px;
+  line-height: 1.35;
+  margin: 0 0 12px;
+  letter-spacing: -0.3px;
+}
+.post-meta {
+  color: var(--text-light);
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.post-lede {
+  background: var(--bg-soft);
+  border-left: 3px solid var(--accent);
+  padding: 14px 18px;
+  margin: 0;
+  color: var(--text-mute);
+  font-size: 15px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.post-content h2 {
+  font-size: 22px;
+  margin: 40px 0 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line);
+}
+.post-content h3 {
+  font-size: 18px;
+  margin: 28px 0 12px;
+}
+.post-content h4 {
+  font-size: 16px;
+  margin: 20px 0 10px;
+}
+.post-content p { margin: 0 0 16px; }
+.post-content ul,
+.post-content ol { padding-left: 24px; margin: 0 0 16px; }
+.post-content li { margin-bottom: 6px; }
+.post-content blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 16px 0;
+  padding: 8px 16px;
+  background: var(--accent-soft);
+  color: var(--text-mute);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.post-content code {
+  background: #f4f4f4;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+}
+.post-content pre {
+  background: #1a1a1a;
+  color: #f0f0f0;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.post-content pre code { background: none; padding: 0; color: inherit; }
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+.post-content table th,
+.post-content table td {
+  border: 1px solid var(--line);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+.post-content table th {
+  background: var(--bg-soft);
+  font-weight: 600;
+}
+.post-content table tr:nth-child(even) td { background: #fafafa; }
+
+.post-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 32px 0;
+}
+
+/* Post CTA */
+.post-cta {
+  margin-top: 48px;
+  padding: 28px;
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  border: 1px solid #ffd9c4;
+}
+.post-cta h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: var(--accent-dark);
+}
+.post-cta p { margin: 0 0 16px; font-size: 14px; color: var(--text); }
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.product-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  color: var(--text);
+  transition: border-color .15s, box-shadow .15s;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.product-card:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.1);
+}
+.product-name { font-weight: 600; font-size: 15px; line-height: 1.4; }
+.product-desc { font-size: 13px; color: var(--text-mute); }
+.product-price { color: var(--accent-dark); font-weight: 700; font-size: 15px; margin-top: auto; }
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: var(--bg-soft);
+  padding: 40px 0 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: var(--text-mute);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  margin-bottom: 24px;
+}
+.footer-grid h4 {
+  font-size: 14px;
+  margin: 0 0 12px;
+  color: var(--text);
+}
+.footer-grid p { margin: 0 0 8px; line-height: 1.6; }
+.footer-products { list-style: none; padding: 0; margin: 0; }
+.footer-products li { margin-bottom: 6px; }
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* About / static pages */
+.page-content { max-width: var(--maxw); margin: 0 auto; }
+.page-content h1 { font-size: 28px; margin: 0 0 16px; }
+
+/* 404 */
+.error-404 { text-align: center; padding: 80px 20px; }
+.error-404 h1 { font-size: 64px; margin: 0; color: var(--accent); }
+.error-404 p { color: var(--text-mute); }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .site-header .wrap { height: auto; padding: 12px 16px; flex-wrap: wrap; gap: 8px; }
+  .site-nav { gap: 10px; font-size: 13px; }
+  .site-nav .cta { padding: 5px 10px; font-size: 12px; }
+  .hero h1 { font-size: 26px; }
+  .hero-sub { font-size: 15px; }
+  .post-title { font-size: 24px; }
+  .post-content h2 { font-size: 19px; }
+  .post-content h3 { font-size: 17px; }
+  .post-content table { font-size: 13px; }
+  .post-content table th, .post-content table td { padding: 8px 10px; }
+  .post-cta { padding: 20px; }
+  .footer-grid { gap: 24px; }
+}

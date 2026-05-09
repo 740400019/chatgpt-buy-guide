@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<section class="hero">
+  <h1>{{ site.title }}</h1>
+  <p class="hero-sub">{{ site.description }}</p>
+  <p class="hero-meta">主站：<a href="{{ site.shop.url }}" target="_blank" rel="noopener"><strong>{{ site.shop.domain }}</strong></a> · {{ site.shop.years }} · {{ site.shop.warranty }} · 客服微信 <strong>{{ site.shop.wechat }}</strong></p>
+</section>
+
+<section class="home-content">
+  {{ content }}
+</section>
+
+<section class="post-list-section">
+  <h2>全部教程文章</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li class="post-card">
+      <a href="{{ post.url | relative_url }}">
+        <h3>{{ post.title }}</h3>
+        <p class="post-card-desc">{{ post.description | default: post.excerpt | strip_html | truncate: 120 }}</p>
+        <div class="post-card-meta">
+          <time>{{ post.date | date: "%Y-%m-%d" }}</time>
+          {% if post.keywords %}<span>· {{ post.keywords | split: "," | first }}</span>{% endif %}
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="home-products">
+  <h2>主站热销商品</h2>
+  <div class="product-grid">
+    {% for p in site.products %}
+    <a class="product-card" href="{{ site.shop.url }}/products/{{ p.slug }}" target="_blank" rel="noopener">
+      <div class="product-name">{{ p.name }}</div>
+      <div class="product-desc">{{ p.desc }}</div>
+      <div class="product-price">{{ p.price }}</div>
+    </a>
+    {% endfor %}
+  </div>
+</section>

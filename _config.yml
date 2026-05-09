@@ -1,0 +1,78 @@
+title: "ChatGPT 购买指南"
+description: "ChatGPT Plus / Pro / Team 购买、支付、防封、教程一站式中文指南。三年老店实测经验，避免踩坑。"
+url: "https://slimexdx.github.io"
+baseurl: "/chatgpt-buy-guide"
+lang: zh-CN
+author: "openobt 编辑部"
+timezone: Asia/Shanghai
+
+# 主站信息（在模板里引用）
+shop:
+  name: "openobt 老店"
+  domain: "openobt.com"
+  url: "https://openobt.com"
+  wechat: "doucco"
+  telegram: "https://t.me/fanbii"
+  warranty: "30 天质保"
+  years: "三年老店"
+
+# 6 个商品
+products:
+  - slug: gpt_plus
+    name: "ChatGPT Plus 独享月卡"
+    price: "¥185"
+    desc: "原生独享账号，完全独立使用"
+  - slug: top_up
+    name: "ChatGPT Plus 代充值"
+    price: "¥185"
+    desc: "你的账号，我们帮你充"
+  - slug: GPTPro_100
+    name: "ChatGPT Pro 100 美金独享"
+    price: "¥899"
+    desc: "100 美金额度独享账号"
+  - slug: GPTPro_200
+    name: "ChatGPT Pro 200 美金独享"
+    price: "¥1650"
+    desc: "200 美金额度，o3 / Sora 全开"
+  - slug: GPT5.5_os
+    name: "ChatGPT Plus 多账号批发团购"
+    price: "联系客服"
+    desc: "5+ 起批，企业 / 团队定制"
+  - slug: GPT_Team
+    name: "ChatGPT Team 团队会员（2 位置）"
+    price: "¥420"
+    desc: "Team 套餐 2 个席位起售"
+
+# 默认 frontmatter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# 插件
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# 排除
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+permalink: /:slug/

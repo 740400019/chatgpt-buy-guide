@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="https://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="post-title" itemprop="headline">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y-%m-%d" }}</time>
+      {% assign words = content | number_of_words %}
+      <span>· 约 {{ words | divided_by: 400 | plus: 1 }} 分钟阅读</span>
+      <span>· {{ words }} 字</span>
+    </div>
+    {% if page.description %}
+    <p class="post-lede">{{ page.description }}</p>
+    {% endif %}
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <aside class="post-cta">
+    <h3>需要直接购买？</h3>
+    <p>本站只做指南，下单与售后请前往主站 <a href="{{ site.shop.url }}" target="_blank" rel="noopener">{{ site.shop.domain }}</a>（{{ site.shop.years }}，{{ site.shop.warranty }}，客服微信 <strong>{{ site.shop.wechat }}</strong>）。</p>
+    <div class="product-grid">
+      {% for p in site.products %}
+      <a class="product-card" href="{{ site.shop.url }}/products/{{ p.slug }}" target="_blank" rel="noopener">
+        <div class="product-name">{{ p.name }}</div>
+        <div class="product-desc">{{ p.desc }}</div>
+        <div class="product-price">{{ p.price }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </aside>
+</article>
