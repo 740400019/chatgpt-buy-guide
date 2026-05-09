@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ChatGPT 优惠码 / 折扣真相：揭穿 99% 假码（2026 实测）"
-description: "网上搜到的"ChatGPT 优惠码""ChatGPT 5 折券"99% 是假的。本文实测了 30+ 个流传的优惠码，告诉你哪些是真、哪些是骗、真正能省钱的方法是什么。"
+description: "网上搜到的「ChatGPT 优惠码」「ChatGPT 5 折券」99% 是假的。本文实测了 30+ 个流传的优惠码，告诉你哪些是真、哪些是骗、真正能省钱的方法是什么。"
 keywords: "ChatGPT 优惠码, ChatGPT 折扣, ChatGPT 优惠券, ChatGPT Plus 优惠, ChatGPT 折扣码, OpenAI 折扣, ChatGPT 便宜, ChatGPT 半价, ChatGPT 学生优惠"
 date: 2026-05-09
 permalink: /chatgpt-coupon-discount-truth/
