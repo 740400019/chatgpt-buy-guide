@@ -3,7 +3,9 @@
 > 中文用户的 ChatGPT 全套购买攻略：Plus / Pro 100 / Pro 200 / Team / Enterprise 价格对比、国内支付方式、防封技巧、常见坑点。三年老店实测整理，2026 最新版。
 
 📍 **在线阅读**：https://740400019.github.io/chatgpt-buy-guide/
+
 🛒 **官方店铺**：[openobt.com](https://openobt.com) · 三年老店 · 30 天质保 · 1 小时内发货
+
 💬 **客服微信**：doucco · **Telegram**：[t.me/fanbii](https://t.me/fanbii)
 
 ---
