@@ -4,7 +4,7 @@ Jekyll + GitHub Pages 静态站点，给 [openobt.com](https://openobt.com) 做 
 
 ## 项目说明
 
-- **目标 URL**：https://slimexdx.github.io/chatgpt-buy-guide/
+- **目标 URL**：https://740400019.github.io/chatgpt-buy-guide/
 - **主题**：自定义（无需 Gemfile，GitHub Pages 内置 gem 即可 build）
 - **插件**：jekyll-sitemap、jekyll-seo-tag、jekyll-feed（GitHub Pages 默认启用）
 - **文章数**：12 篇高质量中文长文（1500-3000 字 / 篇）
@@ -66,7 +66,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/slimexdx/chatgpt-buy-guide.git
+git remote add origin https://github.com/740400019/chatgpt-buy-guide.git
 git push -u origin main
 ```
 
@@ -80,13 +80,13 @@ git push -u origin main
 
 ## 启用 GitHub Pages
 
-1. 打开仓库 https://github.com/slimexdx/chatgpt-buy-guide
+1. 打开仓库 https://github.com/740400019/chatgpt-buy-guide
 2. 顶栏 **Settings** → 左侧 **Pages**
 3. **Source**: Deploy from a branch
 4. **Branch**: `main` / `(root)`
 5. **Save**
 6. 等 1-2 分钟首次 build
-7. 访问 **https://slimexdx.github.io/chatgpt-buy-guide/**
+7. 访问 **https://740400019.github.io/chatgpt-buy-guide/**
 
 GitHub Pages build 状态可以在仓库的 **Actions** 标签里看（绿勾 = 成功）。
 
@@ -94,7 +94,7 @@ GitHub Pages build 状态可以在仓库的 **Actions** 标签里看（绿勾 = 
 
 1. 进入 https://search.google.com/search-console
 2. **Add property** → **URL prefix**
-3. 输入 `https://slimexdx.github.io/chatgpt-buy-guide/`
+3. 输入 `https://740400019.github.io/chatgpt-buy-guide/`
 4. **验证方法选择 HTML 文件**：
    - 下载 GSC 给的 `googleXXXXXX.html` 文件
    - 放到本地项目根目录（和 `index.md` 同级）
@@ -104,7 +104,7 @@ GitHub Pages build 状态可以在仓库的 **Actions** 标签里看（绿勾 = 
 5. 验证通过后提交 sitemap：
    - GSC 左侧菜单 **Sitemaps**
    - 输入 `sitemap.xml`（jekyll-sitemap 自动生成）
-   - 完整 URL 是 `https://slimexdx.github.io/chatgpt-buy-guide/sitemap.xml`
+   - 完整 URL 是 `https://740400019.github.io/chatgpt-buy-guide/sitemap.xml`
    - **Submit**
 
 ## 提交 Bing Webmaster Tools（可选，提升收录）
@@ -175,7 +175,7 @@ push 后 GitHub Pages 自动重新 build。
 
 **Q：sitemap.xml 在哪？**
 
-GitHub Pages build 完成后自动生成，URL 是 `https://slimexdx.github.io/chatgpt-buy-guide/sitemap.xml`。
+GitHub Pages build 完成后自动生成，URL 是 `https://740400019.github.io/chatgpt-buy-guide/sitemap.xml`。
 
 **Q：build 失败？**
 
